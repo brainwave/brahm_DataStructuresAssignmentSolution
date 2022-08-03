@@ -13,8 +13,8 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 		FloorPlanner fp = new FloorPlanner();
-		fp.getFloorSizes();
-		fp.printConstructionOrder();
+		fp.getFloorSizes(); // Show all floor sizes
+		fp.printConstructionOrder(); // Show order of construction
 	}
 
 }

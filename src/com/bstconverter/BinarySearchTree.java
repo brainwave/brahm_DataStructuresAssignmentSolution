@@ -5,7 +5,8 @@ import java.util.Stack;
 public class BinarySearchTree {
 	Node<Integer> root;
 
-	// insertion without recursion (loop approach)
+	// function to insert new elements into a binary search tree without recursion
+	// (loop approach)
 	public void insert(int key) {
 		Node<Integer> node = new Node<Integer>(key);
 
@@ -33,6 +34,9 @@ public class BinarySearchTree {
 			prev.right = node;
 	}
 
+	/*
+	 * Method to build binary search tree Also print it after building
+	 */
 	public BinarySearchTree buildSkewedBst() {
 		BinarySearchTree skewedBst = new BinarySearchTree();
 
@@ -53,6 +57,9 @@ public class BinarySearchTree {
 		return skewedBst;
 	}
 
+	/*
+	 * Method for inorder traversal of a binary search tree
+	 */
 	public void inorder() {
 		Node<Integer> temp = root;
 		Stack<Node<Integer>> stack = new Stack<Node<Integer>>();
